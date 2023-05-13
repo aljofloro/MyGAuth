@@ -57,7 +57,7 @@ class AuthRepositoryImpl @Inject constructor(
       val authResult = auth.signInWithCredential(googleCredential).await()
       val isNewUser = authResult.additionalUserInfo?.isNewUser?:false
       if(isNewUser){
-        //TODO: Agregar usuario a Firestore
+        addUserToFirestore()
       }
       Success(true)
     }catch (e:Exception){
