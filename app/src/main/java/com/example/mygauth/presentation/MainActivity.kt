@@ -1,4 +1,4 @@
-package com.example.mygauth
+package com.example.mygauth.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
