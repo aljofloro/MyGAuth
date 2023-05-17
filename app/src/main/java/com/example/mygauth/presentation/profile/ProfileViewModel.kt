@@ -13,7 +13,6 @@ import com.example.mygauth.domain.repository.SignOutResponse
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import kotlin.math.sign
 
 @HiltViewModel
 class ProfileViewModel @Inject constructor(

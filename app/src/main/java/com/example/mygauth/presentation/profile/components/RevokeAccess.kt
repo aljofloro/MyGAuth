@@ -3,7 +3,6 @@ package com.example.mygauth.presentation.profile.components
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.ViewModel
 import com.example.mygauth.components.ProgressBar
 import com.example.mygauth.domain.model.Response.Loading
 import com.example.mygauth.domain.model.Response.Success

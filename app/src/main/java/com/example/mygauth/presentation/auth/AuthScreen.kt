@@ -4,8 +4,7 @@ import android.app.Activity.RESULT_OK
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Scaffold
+import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.mygauth.presentation.auth.components.AuthContent
@@ -15,7 +14,6 @@ import com.example.mygauth.presentation.auth.components.SignInWithGoogle
 import com.google.android.gms.auth.api.identity.BeginSignInResult
 import com.google.firebase.auth.GoogleAuthProvider.getCredential
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AuthScreen(
   viewModel: AuthViewModel = hiltViewModel(),
