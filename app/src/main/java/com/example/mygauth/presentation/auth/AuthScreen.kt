@@ -20,7 +20,7 @@ fun AuthScreen(
   navigateToProfileScreen: () ->Unit
 ) {
   Scaffold(
-    topBar = { AuthTopBar()},
+    topBar = { AuthTopBar() },
     content = { padding ->
       AuthContent(padding = padding,
       oneTapSignIn = {viewModel.oneTapSignIn()})
