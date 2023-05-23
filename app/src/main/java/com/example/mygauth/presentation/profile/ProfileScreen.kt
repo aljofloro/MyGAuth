@@ -1,6 +1,7 @@
 package com.example.mygauth.presentation.profile
 
 import androidx.compose.material.Scaffold
+import androidx.compose.material.SnackbarResult
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
@@ -45,6 +46,9 @@ fun ProfileScreen(
       message = REVOKE_ACCESS_MESSAGE,
       actionLabel = SIGN_OUT
     )
+    if(result == SnackbarResult.ActionPerformed){
+      viewModel.signOut()
+    }
   }
 
   RevokeAccess(navigateToAuthScreen = {accessRevoked ->

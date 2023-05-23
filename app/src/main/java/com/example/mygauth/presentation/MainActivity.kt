@@ -18,7 +18,9 @@ import com.example.mygauth.navigation.Screen
 import com.example.mygauth.presentation.auth.AuthViewModel
 import com.example.mygauth.ui.theme.MyGAuthTheme
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
   private lateinit var navHostController: NavHostController
   private val viewModel by viewModels<AuthViewModel>()
